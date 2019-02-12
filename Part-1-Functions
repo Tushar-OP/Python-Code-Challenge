@@ -47,6 +47,9 @@ def arrayCheck(nums):
 # stringBits('Heeololeo') → 'Hello'
 
 def stringBits(str):
+    return print(str[::2])
+
+stringBits(str)
   # CODE GOES HERE
 
 
@@ -67,6 +70,21 @@ def stringBits(str):
 
 
 def end_other(a, b):
+str1="Hiabc"
+str2="abc"
+
+def endwith(str1,str2):
+    str1=str1.lower()
+    str2=str2.lower()
+    l=str2
+    if str1.endswith(l):
+        print("True")
+    else:
+        print("False")
+
+
+endwith(str1,str2)
+  
   # CODE GOES HERE
 
 #####################
@@ -81,6 +99,12 @@ def end_other(a, b):
 # doubleChar('Hi-There') → 'HHii--TThheerree'
 
 def doubleChar(str):
+    c = ''              
+    for char in str:
+        c = c + char*2
+    return print(c)
+
+double(str)
   # CODE GOES HERE
 
 
@@ -124,3 +148,12 @@ def fix_teen(n):
 
 def count_evens(nums):
   # CODE GOES HERE
+  lst=[1,2,3,4,5,6,8,10]
+count=0
+for i in lst:
+    if i%2==0:
+        
+        count=count+1
+    else:
+        i=i+1
+print(count)

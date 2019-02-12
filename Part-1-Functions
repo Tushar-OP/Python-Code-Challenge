@@ -104,7 +104,7 @@ def doubleChar(str):
         c = c + char*2
     return print(c)
 
-double(str)
+doubleChar(str)
   # CODE GOES HERE
 
 
@@ -148,7 +148,6 @@ def fix_teen(n):
 
 def count_evens(nums):
   # CODE GOES HERE
-  lst=[1,2,3,4,5,6,8,10]
 count=0
 for i in lst:
     if i%2==0:
@@ -156,4 +155,5 @@ for i in lst:
         count=count+1
     else:
         i=i+1
-print(count)
+return count
+count_evens(nums)

@@ -21,6 +21,15 @@
 # arrayCheck([1, 1, 2, 1, 2, 3]) → True
 
 def arrayCheck(nums):
+    l=len(nums)
+    for i in range(l):
+        
+        if ((nums[i]==1) and (nums[i+1]==2) and (nums[i+2]==3)):
+            return print("True")
+            break
+        else:
+            i=i+1
+    return print("False")
     # CODE GOES HERE
 
 

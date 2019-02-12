@@ -20,8 +20,25 @@
 # arrayCheck([1, 1, 2, 4, 1]) → False
 # arrayCheck([1, 1, 2, 1, 2, 3]) → True
 
-def arrayCheck(nums):
-    # CODE GOES HERE
+def arrayCheck(num):
+    i=0
+    while(i!=4):
+        if (num[i]==1 and num[i+1]==2 and num[i+2]==3):
+            break
+        else:
+            i=i+1
+    if (i==4):
+        print("false")
+    else:
+        print("True")                      
+num=[]
+for i in range(5):
+    a=int(input("enter: "))
+    num.insert(i,a)
+    i=i+1
+print(num)
+arrayCheck(num)
+
 
 
 #####################
@@ -57,8 +74,18 @@ def stringBits(str):
 # end_other('abc', 'abXabc') → True
 
 
-def end_other(a, b):
-  # CODE GOES HERE
+def end_other(a,b):
+    for i in str(a):
+        if i in str(b):
+                print("True")
+                break
+    else:
+        print("false")   
+a=str(input("Enter 1st string: "))
+b=str(input("Enter 2nd string: "))
+end_other(a,b)
+
+
 
 #####################
 ## -- PROBLEM 4 -- ##
@@ -71,14 +98,8 @@ def end_other(a, b):
 # doubleChar('AAbb') → 'AAAAbbbb'
 # doubleChar('Hi-There') → 'HHii--TThheerree'
 
-#def doubleChar(str):
+def doubleChar(str):
   # CODE GOES HERE
-  def doubleChar(string):
-	for i in string:
-		print(i*2, end="")
-
-str1=str(input("Enter a string: "))
-doubleChar(str1)
 
 
 #####################
